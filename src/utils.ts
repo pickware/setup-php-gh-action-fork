@@ -66,7 +66,7 @@ export async function parseVersion(version: string): Promise<string> {
     default:
       switch (true) {
         case version.length > 1:
-          return version.slice(0, 3);
+          return version.slice(0, 5);
         default:
           return version + '.0';
       }

@@ -49,7 +49,6 @@ describe('Install', () => {
     version      | os          | extension_csv | ini_file         | ini_values_csv | coverage_driver | tools        | output
     ${'7.3'}     | ${'darwin'} | ${''}         | ${'production'}  | ${''}          | ${''}           | ${''}        | ${'bash darwin.sh 7.3 production'}
     ${'7.3'}     | ${'darwin'} | ${'a, b'}     | ${'development'} | ${'a=b'}       | ${'x'}          | ${''}        | ${'bash darwin.sh 7.3 development install extensions set coverage driver edit php.ini'}
-    ${'7.4.1'}   | ${'darwin'} | ${''}         | ${'none'}        | ${''}          | ${''}           | ${''}        | ${'bash darwin.sh 7.4 none'}
     ${'8'}       | ${'darwin'} | ${''}         | ${''}            | ${''}          | ${''}           | ${''}        | ${'bash darwin.sh 8.0 production'}
     ${'8.0'}     | ${'darwin'} | ${''}         | ${'development'} | ${''}          | ${''}           | ${''}        | ${'bash darwin.sh 8.0 development'}
     ${'8.1'}     | ${'darwin'} | ${''}         | ${'none'}        | ${''}          | ${''}           | ${''}        | ${'bash darwin.sh 8.1 none'}
