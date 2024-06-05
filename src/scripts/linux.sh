@@ -234,9 +234,10 @@ add_php_config() {
 # Function to Setup PHP
 setup_php() {
   step_log "Setup PHP"
+  php -v
   sudo mkdir -m 777 -p /var/run /run/php
   php_config="$(command -v php-config)"
-  if [[ -z "$php_config" ]] || [ "$(php_semver | cut -c 1-3)" != "$version" ]; then
+  if [[ -z "$php_config" ]] || [ "$(php_semver | cut -c 1-5)" != "$version" ]; then
     if [ ! -e "/usr/bin/php$version" ] || [ ! -e "/usr/bin/php-config$version" ]; then
       add_php >/dev/null 2>&1
     else
